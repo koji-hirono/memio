@@ -80,6 +80,7 @@ func TestVar_Grow(t *testing.T) {
 			t.Errorf("want %v; but got %v\n", 3, len(buf))
 		}
 	})
+	/*
 	t.Run("out of memory", func(t *testing.T) {
 		t.Skip("Skip because out of memory by make is unrecovered error.")
 		var lim syscall.Rlimit
@@ -118,4 +119,5 @@ func TestVar_Grow(t *testing.T) {
 			t.Errorf("want %v; but got %v\n", 2, len(buf))
 		}
 	})
+	*/
 }
